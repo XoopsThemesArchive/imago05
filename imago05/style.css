@@ -1,0 +1,391 @@
+/*---------------------------------------全局定义-------------------------------------*/
+table { width: 100% ;}
+table td { vertical-align: top; font-family: Verdana, Arial, Helvetica, sans-serif;}
+div#content { padding: 5px; text-align: left;}
+div#content td { padding: 3px;}
+hr {
+	color: #C9BF9C;
+	height: 1px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-weight: normal;
+	color: #333333;
+	font-size: 12px;
+	background: #FFFFFF;
+}
+a {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	text-decoration: none;
+	color: #877863;
+	font-style: normal;
+	font-weight: normal;
+}
+a:hover { font-family: "Arial", "Helvetica", "sans-serif"; font-size: 12px; color: #999999; font-style: normal}
+td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	color: #333333;
+	font-size: 12px;
+	font-weight: normal;
+}
+input {
+	background-color : #ECEAE3;
+	color : #666666;
+	font-family : "Tahoma", "taipei", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size : 12px;
+	font-weight : normal;
+	text-indent : 2px;
+	border: 1px solid #C9BF9C;
+}
+textarea {
+	font-family: "Tahoma", "taipei", "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	background-color : #ECEAE3;
+	font-weight : normal;
+	text-indent : 2px;
+	border: 1px solid #C9BF9C;
+}
+select {font-family: "Tahoma", "taipei", "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 12px;font-weight : normal;background-color:#FBFAF4; } 
+img { border: 0;}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: disc inside;}
+/*---------------------------------------基本定义-------------------------------------*/
+.frame{	}
+.odd { background-color: #FBFAF4;padding:3px;}
+.outer {
+	padding:3px;
+	margin: 0px;
+	border: 1px solid #C9BF9C;
+	background: #FFFFFF;
+}
+.even {
+	background-color: #FBFAF4;
+	padding: 3px;
+}
+th {
+	background-color: #D9D5C8;
+	text-align: left;
+	padding: 3px;
+	color: #333333;
+}
+.head {
+	background-color: #ECEAE3;
+	padding: 3px;
+	font-weight: bold;
+}
+.foot {
+	background-color: #ECEAE3;
+	padding: 3px;
+	text-align: center;
+	color: #333333;
+
+}
+.footer {
+	background: #EFEBE3;
+	border-left: 4px solid #D9CBB3;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	width: 870px;
+	text-align: center;
+	color: #666666;
+	line-height: 20px;
+}
+.footer_left {background: #EFEBE3;}
+.footer_right {background: #EFEBE3;}
+/*---------------------------------------代码引用-------------------------------------*/
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px solid #C9BF9C; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px solid #C9BF9C; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+/*---------------------------------------用户菜单-------------------------------------*/
+.-------------- menu{}
+td#usermenu a {
+	font-weight: normal;
+	padding: 2px 0px 0px 11px;
+	color: #877863;
+
+	background: url(images/arrows.gif) no-repeat;
+}
+td#usermenu a:hover {
+	text-decoration: none;
+	color: #999999;
+
+}
+td#usermenu a.menuTop {
+	text-decoration: none;
+
+}
+td#usermenu a.highlight {padding-left: 30px;background-color: #fcc; solid #999999;text-decoration: none;}
+
+/*---------------------------------------主要菜单-------------------------------------*/
+td#mainmenu a {
+	font-weight: normal;
+	padding: 2px 0px 0px 11px;
+	color: #877863;
+
+}
+td#mainmenu a:hover {
+	text-decoration: none;
+	color: #999999;
+
+}
+td#mainmenu a.menuTop {
+	text-decoration: none;
+	padding-left: 11px;
+	background: url(images/arrows.gif) no-repeat;
+}
+td#mainmenu a.menuMain {
+	padding-left: 11px;
+	background: url(images/arrows.gif) no-repeat;
+}
+
+td#mainmenu a.menuSub {
+	padding-left: 23px;
+	text-decoration: none;
+	color: #877863;
+	background: url(images/arrows2.gif) no-repeat;
+}
+/*---------------------------------------区块定义-------------------------------------*/
+.block_table{ width: 98%}
+.left_block_table { width: 170px;}
+.right_block_table { width: 170px;}
+.cc_block_table { width: 98%; }
+.cl_block_table { width: 96%; }
+.cr_block_table { width: 96%; }
+.content_table { width: 96%; }
+/*---------------------------------------页    首-------------------------------------*/
+.head_welcome {
+	background: #EFEBE3;
+	border-left: 4px solid #D9CBB3;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	width: 870px;
+}
+.head_welcome_left {background: #EFEBE3;}
+.head_welcome_right {background: #EFEBE3;}
+.head_logo {
+	font-size: 26px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: #F8B407;
+	border-left: 4px solid #FF9900;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	width: 870px;
+}
+.head_logo_left{background: #F8B407;}
+.head_logo_right{background: #F8B407;}
+.head_menu{
+	color: #877863;
+	background: #E8E0D1;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border-left: 4px solid #D6C8AD;
+	width: 870px;
+}
+.head_menu a{
+	color:#333333;
+	padding: 4px;
+	font-weight: bold;
+}
+.head_menu a:hover{
+	color:#333333;
+	background: #DDD0B9;
+	padding: 4px;
+
+}
+.head_menu_left{background: #E8E0D1;}
+.head_menu_right {background: #E8E0D1;}
+.head_line {
+	height: 6px;
+}
+.head_block {
+	width: 870px;
+}
+/*---------------------------------------左 区 块-------------------------------------*/
+.--------------- left{}
+.left_block {
+	width: 170px;
+
+
+}
+.left_block_title {
+	background: #ECEAE3;
+	color: #000000;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	width: 170px;
+	font-size: 12px;
+	border-left: 6px solid #D9D5C8;
+
+}
+.left_block_content {
+	background: #FBFAF4;
+	line-height: 20px;
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+}
+.left_block_foot{
+	background: #FFFFFF;
+	height: 6px;
+}
+/*---------------------------------------右 区 块-------------------------------------*/
+.-------------- right{}
+.right_block{
+	width: 170px;
+
+}
+.right_block_title {
+	background: #ECEAE3;
+	color: #000000;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	width: 170px;
+	font-size: 12px;
+	border-left: 6px solid #D9D5C8;
+}
+.right_block_content {
+	background: #FBFAF4;
+	line-height: 20px;
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+}
+.right_block_foot{
+	background: #FFFFFF;
+	height: 6px;
+}
+/*---------------------------------------中央区块-------------------------------------*/
+.-------------- conter{}
+.conter_block{
+	width: 100%;
+}
+.conter_block_title {
+	background: #ECEAE3;
+	color: #000000;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	width: 170px;
+	font-size: 12px;
+	border-left: 6px solid #D9D5C8;
+
+}
+.conter_block_content {
+	background: #FBFAF4;
+	line-height: 20px;
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+}
+.conter_block_foot{
+	background: #FFFFFF;
+	height: 6px;
+}
+
+
+.cc_block_title {
+	background: #ECEAE3;
+	color: #000000;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	width: 170px;
+	font-size: 12px;
+	border-left: 6px solid #D9D5C8;
+
+}
+.cc_block_content {
+	background: #FBFAF4;
+	line-height: 20px;
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+}
+.cc_block_foot{
+	background: #FFFFFF;
+	height: 6px;
+}
+
+.conter_content {
+	background: #FBFAF4;
+	padding: 4px;
+}
+
+
+/*---------------------------------------模组定义-------------------------------------*/
+/*---------------------------------------评    论-------------------------------------*/
+.-------------- com{}
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 12px; color: #333333; font-weight:bold; border: 1px solid #cccccc; background-color: #ffffff; margin: 1px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 1px; margin-top: 10px; color: #333333; font-weight:bold; font-size: 12px;}
+.comUserRank {margin: 1px;}
+.comUserRankText {font-size: 12px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+/*---------------------------------------新闻消息-------------------------------------*/
+.-------------- news{}
+.item {}
+.itemHead {
+	color: #666666;
+	padding: 2px;
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-left: 6px solid #D9D5C8;
+	border-top: 2px solid #FBFAF4;
+	border-bottom: 2px solid #FBFAF4;
+	background: #ECEAE3;
+}
+.itemInfo {
+	color: #999999;
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+}
+.itemTitle a {font-size: 14px; font-weight: bold; background-color: transparent;}
+.itemTitle a:hover {font-size: 14px; font-weight: bold; background-color: transparent;}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {text-align: left;}
+.itemText {
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1.5em;
+}
+.itemText:first-letter {}
+.itemFoot {
+	padding: 4px;
+	border-left: 2px solid #D9CBB3;
+	text-align: right;
+	color: #999999;
+}
+.itemAdminLink {}
+.itemPermaLink {}
+/*---------------------------------------论    坛-------------------------------------*/
+.------------- forum {}
+/*---------------------------------------其    它-------------------------------------*/
+.spotlight{
+	width: 128px;
+}
